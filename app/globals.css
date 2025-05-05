@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#--clerk-keyless-prompt-button, .cl-internal-1t11dai {
+  display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000; 
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
